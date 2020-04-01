@@ -25,6 +25,12 @@
         // this.$router.push({path:"/"});
         this.$router.push({name:'anasayfa'});
       }
+    },
+    watch:{
+          //newValue,oldValue
+      "$route"(to,from){
+        this.id = to.params.id;
+      }
     }
   }
 </script>
