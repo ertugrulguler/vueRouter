@@ -7,10 +7,16 @@ import UserStart from './components/user/UserStart.vue';
 
 
 export const routes = [
-    {path:'',component: Home, name:'anasayfa'},
-    {path:'/user',component: User },
-    {path:'/user/:id',component: User },
-    {path:'/userDetail',component: UserDetail },
-    {path:'/userEdit',component: UserEdit },
-    {path:'/userStart',component: UserStart },
+    {path:'/',component: Home, name:'anasayfa'},
+    {
+        path:'/user',component: User,children:[
+            {path:'',component:UserStart},
+            {path:':id',component:UserDetail},
+            {path:':id/edit',component:UserEdit}
+        ] 
+    },
+    // {path:'/user/:id',component: User },
+    // {path:'/userDetail',component: UserDetail },
+    // {path:'/userEdit',component: UserEdit },
+    // {path:'/userStart',component: UserStart },
 ]
