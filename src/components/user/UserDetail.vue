@@ -4,7 +4,7 @@
     <hr>
 
     Kullanıcı ID: {{$route.params.id}}
-    <router-link tag="button" class="btn btn-primary btn-xs" :to="{name:'userEdit',params:{id:$route.params.id}}">Düzenle</router-link>
+    <router-link tag="button" class="btn btn-primary btn-xs" :to="{name:'userEdit',params:{id:$route.params.id},query:{name:'Ertuğrul',lastName:'Güler'}}">Düzenle</router-link>
     <!-- <router-link tag="button" class="btn btn-primary btn-xs" :to="'/user/'+$route.params.id+'/edit'">Düzenle</router-link> -->
     <!-- <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, earum libero odit optio repellendus sed
