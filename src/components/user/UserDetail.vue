@@ -2,7 +2,9 @@
   <div class="container">
     <h3>User Detail Component</h3>
     <hr>
-    <p>
+
+    Kullanıcı ID: {{$route.params.id}}
+    <!-- <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, earum libero odit optio repellendus sed
       soluta? Animi, atque blanditiis commodi consequatur distinctio dolorem eaque eos expedita, modi reprehenderit
       repudiandae soluta.
@@ -11,7 +13,7 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, earum libero odit optio repellendus sed
       soluta? Animi, atque blanditiis commodi consequatur distinctio dolorem eaque eos expedita, modi reprehenderit
       repudiandae soluta.
-    </p>
+    </p> -->
   </div>
 </template>
 <script>
