@@ -4,6 +4,7 @@
     <hr>
 
     Kullanıcı ID: {{$route.params.id}}
+    <router-link tag="button" class="btn btn-primary btn-xs" :to="'/user/'+$route.params.id+'/edit'">Düzenle</router-link>
     <!-- <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, earum libero odit optio repellendus sed
       soluta? Animi, atque blanditiis commodi consequatur distinctio dolorem eaque eos expedita, modi reprehenderit
