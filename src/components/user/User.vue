@@ -3,6 +3,7 @@
     <router-view></router-view>
     <hr>
     <button class="btn btn-success" @click="navigateToHome">Home Component</button>
+    <hr>
   </div>
 </template>
 <script>
